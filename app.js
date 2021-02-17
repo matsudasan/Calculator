@@ -13,8 +13,11 @@ const Calc=(e)=>{
         flag=false
 
     }else if(e.target.innerHTML==="CE"){
+        if(str.includes(result.textContent.slice(-1))){
+            return
+        }
         input.textContent=input.textContent.slice(0,-1)
-        result.textContent=input.textContent
+        result.textContent=result.textContent.slice(0,-1)
     }else if(e.target.innerHTML==="="){
         input.textContent=eval(result.textContent.replace('×','*').replace('÷','/'))
         Creat()
