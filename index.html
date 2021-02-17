@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>計算機</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+           <div class="result-area">
+               <p id="result"></p>
+           </div>
+            <div class="input-area">
+                <h1 id="input"></h1>
+            </div>
+            <table>
+                <tr>
+                    <td colspan="2"><button>AC</button></td>
+                    <td><button>CE</button></td>
+                    <td><button>÷</button></td>
+                </tr>
+                <tr>
+                    <td><button>9</button></td>
+                    <td><button>8</button></td>
+                    <td><button>7</button></td>
+                    <td><button>×</button></td>
+                </tr>
+                <tr>
+                    <td><button>6</button></td>
+                    <td><button>5</button></td>
+                    <td><button>4</button></td>
+                    <td><button>-</button></td>
+                </tr>
+                <tr>
+                    <td><button>3</button></td>
+                    <td><button>2</button></td>
+                    <td><button>1</button></td>
+                    <td rowspan="2"><button>+</button></td>
+                </tr>
+                <tr>
+                    <td><button>.</button></td>
+                    <td><button>0</button></td>
+                    <td><button>=</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="memo">
+            <h2>履歴</h2>
+            <ul id="list"></ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
